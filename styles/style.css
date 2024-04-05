@@ -55,10 +55,18 @@ p {
 }
 .header-city {
     display: flex;
-    margin-right: 20px;
+    margin-right: 30px;
+}
+.point-cursor {
+    margin-right: 10px;
 }
 .header-phone {
     display: flex;
+}
+.header-phone-link {
+    margin-left: 10px;
+    color: #000;
+    font-size: 16px;
 }
 
 .hero {
