@@ -1,0 +1,312 @@
+
+
+/* Загальні стилі */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.main-header-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-contact {
+    display: flex;
+}
+.header-city {
+    display: flex;
+    margin-right: 20px;
+}
+.header-phone {
+    display: flex;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-img.jpeg); 
+    position: relative;
+    min-width: 320px;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.hero-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 35px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 115%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.hero-text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 200;
+    text-decoration: none;
+    line-height: 150%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.hero-button {
+    background-attachment: scroll;
+    background-color: rgba(30, 105, 184, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    text-align: center;
+    text-align-last: center;
+    text-decoration: none;
+    line-height: 100%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    padding-top: 18px;
+    padding-left: 35px;
+    padding-right: 36px;
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 0px;
+}
+.hero-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.service {
+    margin-bottom: 40px;
+}
+.services-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(68, 68, 68, 1);
+    font-size: 45px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 115%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 36px;
+}
+.services-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.services-list {
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-list-item {
+    text-align: center;
+    padding: 20px 0px;
+}
+.service-card-img,
+.service-card-title,
+.service-card-text {
+    margin-bottom: 20px;
+}
+
+.service-card-title {
+    color: rgba(68, 68, 68, 1);
+    font-size: 30px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 125%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.service-card-text {
+    color: rgba(68, 68, 68, 1);
+    font-size: 18px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 150%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.howwork {
+    margin-top: 40px;
+}
+.howwork-main {
+    display: flex;
+
+}
+.howwork-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/man-fix-car.jpeg);
+    width: 70%;
+    object-fit: cover;
+    position: relative;
+    background-position: center;
+    min-height: 600px;
+    background-size: cover;
+}
+.howwork-text {
+    background-color: rgba(30, 39, 47, 1);
+    text-align: left;
+
+}
+.howwork-title {
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    text-align-last: left;
+    line-height: 115%;
+    text-decoration: none;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.howwork-subtitle {
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 200;
+    text-align-last: left;
+    line-height: 146%;
+    text-decoration: none;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;  
+    margin-left: 20px;
+}
+.howwork-list-item {
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    text-align: left;
+    text-align-last: left;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 146%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.about {
+    margin-top: 40px;
+    text-align: center;
+}
+.about-title {
+    color: rgba(68, 68, 68, 1);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    text-align-last: center;
+    line-height: 115%;
+    text-decoration: none;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 18px;
+    color: rgba(68, 68, 68, 1);
+    text-align-last: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    line-height: 150%;       
+    font-style: normal;
+}
+
+.footer {
+    background-color: rgba(30, 39, 47, 1);
+    text-align: left;
+}
+.footer-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 215px;
+    margin-top: 40px;
+}
+.footer-logo{
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+
+.phone-link,
+.mail-link,
+.adress-link {
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+.logobox {
+    margin-bottom: 10px;
+}
